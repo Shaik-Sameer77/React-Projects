@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     passwordGenerator();
-  }, [length, number, character, setPassword]);
+  }, [length, number, character, passwordGenerator]);
 
   const copyPassword = useCallback(() => {
     passwordInput.current?.select();
