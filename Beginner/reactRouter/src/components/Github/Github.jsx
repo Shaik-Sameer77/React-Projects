@@ -17,7 +17,7 @@ const Github = () => {
 //   }, []);
 
   return (
-    <div className="text-center h-screen flex flex-col items-center justify-center m-4 bg-gray-600 text-white p-4 text-3xl">
+    <div className="text-center flex flex-col items-center justify-center m-4 bg-gray-600 text-white p-4 text-3xl">
     <div >
       Github followers: {data?.followers}
     </div>
