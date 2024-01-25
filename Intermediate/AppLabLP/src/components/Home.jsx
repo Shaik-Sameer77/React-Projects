@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/home.scss";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import img from "../assets/illustrations/arrow-right.png";
 import img1 from "../assets/illustrations/mobile.png";
 import Features from "./Features.jsx";
-
+import Pricing from "./Pricing.jsx";
 
 const Home = () => {
-  
   return (
     <>
       <main>
@@ -18,11 +17,7 @@ const Home = () => {
             <div className="items">
               <div className="col">
                 <span className="badge">
-                  <img
-                    className="img-badge"
-                    src={img}
-                    alt=""
-                  />
+                  <img className="img-badge" src={img} alt="" />
                   #1 Editiors Choice App of 2020
                 </span>
                 <h1 className="title">
@@ -31,18 +26,13 @@ const Home = () => {
                 </h1>
                 <p className="para">
                   Increase productivity with a simple to-do app. app for
-                  <br/>
+                  <br />
                   managing your personal budgets.
                 </p>
-                <Link
-                  className="btn"
-                  to="/"
-                  role="button"
-                >
+                <Link className="btn" to="/" role="button">
                   Try for free
                 </Link>
-                <Link className="btn-link" href="/" role="button">
-                  {" "}
+                <Link className="btn-link" to="/" role="button">
                   Watch demo video
                 </Link>
               </div>
@@ -52,13 +42,8 @@ const Home = () => {
             </div>
           </div>
         </section>
-
-        <div id="features" style={{ height: "100vh" }}>
-          <Features/>
-        </div>
-        <div id="pricing" style={{ height: "100vh" }}>
-          Pricing
-        </div>
+        <Features />
+        <Pricing />
         <div id="testimonials" style={{ height: "100vh" }}>
           Testimonials
         </div>

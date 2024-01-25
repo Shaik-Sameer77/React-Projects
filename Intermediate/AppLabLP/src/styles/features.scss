@@ -1,0 +1,130 @@
+.companies {
+  padding: 5rem 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 11.85rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #616368;
+    padding: 0 1rem;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1rem;
+      .details {
+        text-align: center;
+        width: 100%;
+        padding: 0 1rem;
+        .para {
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+    .companies-img {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 -1rem;
+      .company {
+        text-align: center;
+        width: 16.66667%;
+      }
+    }
+  }
+}
+
+.features {
+  padding: 3rem 0;
+  position: relative;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616368;
+  .container-lg {
+    position: relative;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 11.85rem;
+    padding: 0 1rem;
+    .row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 0 -1rem;
+      .image-sec {
+        text-align: left;
+        width: 50%;
+        max-width: 100%;
+        padding: 0 1rem;
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+          width: 550px;
+          vertical-align: middle;
+        }
+      }
+      .details {
+        width: 50%;
+        max-width: 100%;
+        .heading {
+          line-height: 1.25;
+          font-weight: 700;
+          font-size: 2.0736rem;
+          margin-bottom: 0.5rem;
+          margin-top: 0;
+          font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont,
+            "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+            "Segoe UI Emoji", "Segoe UI Symbol";
+          color: #242f51;
+        }
+        .para{
+            margin : 1.8rem 0;   
+        }
+        .items{
+            display:flex;
+            align-items: center;
+            margin-bottom: 3rem;
+            .img-fluid{
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                width: 90px;
+            }
+            .info{
+                padding: 0 1.8rem;
+                .text-danger{
+                    color: #F55767;
+                }
+                .text-primary {
+                    color: #2500F9;
+                }
+                .text-success {
+                    color: #40975F;
+                }
+                h5{
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                    line-height: 1.2;
+                }
+                p{
+                    margin-bottom: 1rem;
+
+                }
+            }
+
+        }
+      }
+    }
+  }
+}

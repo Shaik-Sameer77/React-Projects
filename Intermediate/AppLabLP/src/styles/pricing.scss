@@ -1,0 +1,88 @@
+.pricing {
+  padding: 7.5rem 0;
+  position: relative;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #616368;
+  .container {
+    position: relative;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 11.85rem;
+    padding: 0 1rem;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1rem;
+    }
+    .heading {
+      justify-content: center;
+      .info {
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 50%;
+        max-width: 100%;
+        padding: 0 1rem;
+        h6 {
+          line-height: 1.25;
+          font-weight: 700;
+          font-size: 2.0736rem;
+          margin-bottom: 1rem;
+          color: #242f51;
+        }
+        p {
+          margin-bottom: 1.8rem;
+        }
+      }
+    }
+    .cards {
+      align-items: center;
+      .pack {
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+        .pack-info {
+          display: flex;
+          justify-content: center;
+          .subscribe {
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            display: inline-block;
+          }
+          .switch {
+            padding-left: 2.5em;
+            min-height: 1.5rem;
+            margin-bottom: 0.125rem;
+            .check-box {
+              background-position: right center;
+              background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="-4 -4 8 8"%3e%3ccircle r="3" fill="%23fff"/%3e%3c/svg%3e');
+              width: 2rem;
+              margin-left: -2.5rem;
+              border-radius: 2rem;
+              transition: background-position 0.15s ease-in-out;
+              background-color: #2500f9;
+              border-color: #2500f9;
+              float: left;
+              height: 1rem;
+              margin-top: 0.25rem;
+              vertical-align: top;
+              background-repeat: no-repeat;
+              border: 1px solid rgba(0,0,0,0.25);
+            }
+            label{
+                font-weight: 500 ;
+                margin-bottom: 0.5rem;
+                display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

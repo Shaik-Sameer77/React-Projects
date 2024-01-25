@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import "../styles/header.scss"
+import "../styles/header.scss";
 
 const Header = () => {
   return (
@@ -12,45 +12,28 @@ const Header = () => {
             <span className="text-warning">App</span>
             <span className="text-1000">Lab</span>
           </Link>
-          <div
-            className="menu-container"
-          >
+          <div className="menu-container">
             <ul className="menu-items">
               <li className="nav-item">
-                <HashLink
-                  to="#home"
-                >
-                  Home
-                </HashLink>
-              </li>
-              <li className="nav-item" >
-                <HashLink  to="#features">
-                  Key Features
-                </HashLink>
-              </li>
-              <li className="nav-item" >
-                <HashLink to="#pricing">
-                  Pricing
-                </HashLink>
+                <HashLink to="#home">Home</HashLink>
               </li>
               <li className="nav-item">
-                <HashLink to="#testimonials">
-                  Testimonial
-                </HashLink>
+                <HashLink to="#features">Key Features</HashLink>
               </li>
-              <li className="nav-item" >
-                <HashLink to="#faq">
-                  FAQ
-                </HashLink>
+              <li className="nav-item">
+                <HashLink to="#pricing">Pricing</HashLink>
+              </li>
+              <li className="nav-item">
+                <HashLink to="#testimonials">Testimonial</HashLink>
+              </li>
+              <li className="nav-item">
+                <HashLink to="#faq">FAQ</HashLink>
               </li>
             </ul>
             <form className="form">
-              <button
-                className="btn"
-                type="submit"
-              >
-                Try for free
-              </button>
+              <Link to="/">
+                <button className="btn">Try for free</button>
+              </Link>
             </form>
           </div>
         </div>
