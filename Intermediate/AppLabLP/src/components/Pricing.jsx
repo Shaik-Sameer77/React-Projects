@@ -1,43 +1,53 @@
-import React from "react";
-import "../styles/pricing.scss"
+// Pricing.jsx
+
+import React,{useState} from "react";
+import "../styles/pricing.scss";
+import { Switch } from 'antd';
 
 const Pricing = () => {
+  const [isYearly, setIsYearly] = useState(false);
+
+  const onChange = (checked) => {
+    setIsYearly(checked);
+  };
   return (
     <>
       <section className="pricing" id="pricing">
         <div className="container">
           <div className="row heading">
             <div className="info">
-              <h6>
-                Get awesome features, without extra charges
-              </h6>
+              <h6>Get awesome features, without extra charges</h6>
               <p>
                 The rise of mobile devices transforms the way we consume
-                information entirely and the world's most elevant channels such
+                information entirely and the world's most relevant channels such
                 as Facebook.
               </p>
             </div>
           </div>
           <div className="row cards">
-            <div className="pack">
-              <div className="pack-info">
-                <label className="subscribe" htmlFor="customSwitch1">
+          <div className="pack">
+              <div className="pack-info toggle-container">
+                <label
+                  className={`subscribe ${!isYearly ? "active" : ""}`}
+                  onClick={() => setIsYearly(false)}
+                >
                   Monthly
                 </label>
-                <div className="switch">
-                  <input
-                    className="check-box"
-                    id="customSwitch1"
-                    type="checkbox"
-                    
-                  />
-                  <label className="form-check-label align-top" htmlFor="customSwitch1">
-                    Yearly
-                  </label>
-                </div>
+                <Switch
+                  className="switch"
+                  defaultChecked={isYearly}
+                  onChange={onChange}
+                  style={isYearly?{backgroundColor:"#2500f9"}:""}
+                />
+                <label
+                  className={`subscribe ${isYearly ? "active" : ""}`}
+                  onClick={() => setIsYearly(true)}
+                >
+                  Yearly
+                </label>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="cards-block">
               <div className="card shadow-lg mb-4 border-0">
                 <div className="card-header border-bottom-0 pt-7 pb-5">
                   <div className="d-flex justify-content-center">
@@ -64,7 +74,10 @@ const Pricing = () => {
                       eCommerce Store{" "}
                     </li>
                   </ul>
-                  <a className="btn btn-lg btn-primary rounded-pill mb-3" href="#">
+                  <a
+                    className="btn btn-lg btn-primary rounded-pill mb-3"
+                    href="#"
+                  >
                     Start free trial
                   </a>
                 </div>

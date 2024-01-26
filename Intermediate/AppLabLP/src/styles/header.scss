@@ -1,6 +1,5 @@
 .navbar {
-  background-color: rgba(255, 255, 255, 0.75);
-  transition: none 0s ease 0s;
+  transition: background-color 0.3s ease-in-out; // Add a transition for a smooth effect
   position: fixed;
   font-family: "Poppins", "Open Sans", -apple-system, BlinkMacSystemFont,
     "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
@@ -9,45 +8,54 @@
   padding: 1rem;
   display: flex;
   align-items: center;
+
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 10.5rem;
     padding: 0 1rem;
+
     a {
       text-decoration: none;
     }
+
     .text-warning {
       color: #fcae61;
       font-weight: 700;
       font-size: 1.44rem;
       cursor: pointer;
     }
+
     .text-1000 {
       color: #242f51;
       font-weight: 700;
       font-size: 1.44rem;
       cursor: pointer;
     }
+
     .menu-container {
       display: flex;
       align-items: center;
     }
+
     .menu-items {
       display: flex;
       list-style: none;
       margin-left: 24.75rem;
-    }
-    .nav-item {
-      a {
-        color: #1f1534;
-        font-weight: 500;
-        padding: 0 0.5rem;
+
+      .nav-item {
+        a {
+          color: #1f1534;
+          font-weight: 500;
+          padding: 0 0.5rem;
+        }
       }
     }
+
     .form {
       padding-left: 3rem;
+
       .btn {
         cursor: pointer;
         border-radius: 50rem;
@@ -58,6 +66,9 @@
         line-height: 1.5;
         text-align: center;
         border: 1px solid transparent;
+        &:hover {
+          background-color: darkblue; 
+        }
       }
     }
   }
