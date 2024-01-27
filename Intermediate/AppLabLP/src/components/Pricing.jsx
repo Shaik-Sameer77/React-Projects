@@ -3,6 +3,7 @@
 import React,{useState} from "react";
 import "../styles/pricing.scss";
 import { Switch } from 'antd';
+import {Link} from "react-router-dom"
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);
@@ -48,19 +49,19 @@ const Pricing = () => {
               </div>
             </div>
             <div className="cards-block">
-              <div className="card shadow-lg mb-4 border-0">
-                <div className="card-header border-bottom-0 pt-7 pb-5">
-                  <div className="d-flex justify-content-center">
+              <div className="card border-0">
+                <div className="card-header ">
+                  <div className="content">
                     <h1 className="fw-bold">$0</h1>
-                    <span className="d-flex align-items-center">/month</span>
+                    <span>{isYearly?"/year":"/month"}</span>
                   </div>
-                  <h5 className="fw-bold text-center">Business Class</h5>
-                  <span className="text-700 text-center d-block">
+                  <h5 className="fw-bold">Business Class</h5>
+                  <span>
                     For small teams or office
                   </span>
                 </div>
-                <div className="card-body mx-auto">
-                  <ul className="list-unstyled mb-4">
+                <div className="card-body">
+                  <ul>
                     <li className="text-700 py-2 text-secondary">
                       Darg &amp; Drop Builder
                     </li>
@@ -74,29 +75,29 @@ const Pricing = () => {
                       eCommerce Store{" "}
                     </li>
                   </ul>
-                  <a
-                    className="btn btn-lg btn-primary rounded-pill mb-3"
-                    href="#"
+                  <Link
+                    className="btn"
+                    to="/"
                   >
                     Start free trial
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="card shadow-lg mb-4">
-                <div className="card-header border-bottom-0 pt-7 pb-5">
-                  <div className="d-flex justify-content-center">
+            <div className="cards-block">
+              <div className="card">
+                <div className="card-header ">
+                  <div className="content">
                     <h1 className="fw-bold">$99</h1>
-                    <span className="d-flex align-items-center">/month</span>
+                    <span>{isYearly?"/year":"/month"}</span>
                   </div>
                   <h5 className="fw-bold text-center">Pro Master</h5>
-                  <span className="text-700 text-center d-block">
+                  <span>
                     For small teams or office
                   </span>
                 </div>
-                <div className="card-body mx-auto">
-                  <ul className="list-unstyled mb-4">
+                <div className="card-body">
+                  <ul>
                     <li className="text-700 py-2 text-secondary">
                       Darg &amp; Drop Builder
                     </li>
@@ -111,14 +112,13 @@ const Pricing = () => {
                     </li>
                   </ul>
                   <div className="d-flex flex-column">
-                    {" "}
-                    <a
-                      className="btn btn-lg btn-primary rounded-pill mb-3"
-                      href="#"
+                    <Link
+                      className="btn"
+                      to="/"
                     >
                       Start free trial
-                    </a>
-                    <a href="#">Or Start 14 days trail</a>
+                    </Link>
+                    <Link className="trail" to="/">Or Start 14 days trail</Link>
                   </div>
                 </div>
               </div>
