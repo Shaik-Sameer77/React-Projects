@@ -6,6 +6,7 @@ import img1 from "../assets/illustrations/mobile.png";
 import Features from "./Features.jsx";
 import Pricing from "./Pricing.jsx";
 import Testimonials from "./Testimonials.jsx";
+import FAQ from "./FAQ.jsx";
 
 const Home = () => {
   return (
@@ -46,10 +47,7 @@ const Home = () => {
         <Features />
         <Pricing />
         <Testimonials />
-
-        <div id="faq" style={{ height: "100vh" }}>
-          FAQ
-        </div>
+        <FAQ/>
       </main>
     </>
   );
